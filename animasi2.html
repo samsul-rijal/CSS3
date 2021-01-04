@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animasi</title>
+
+	<style>
+		body {
+			margin-bottom: 500px;
+			margin-left: 50px;
+		}
+
+		div {
+			background: yellow;
+			width: 150px;
+			height: 150px;
+			animation-name: goyang;
+			animation-duration: 5s;
+			animation-iteration-count: 4;
+			animation-direction: alternate-reverse;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+			animation-play-state: paused;
+		}
+
+		div:hover {
+				animation-play-state: running;
+			}
+
+		@keyframes goyang {
+			0% { background: yellow; width: 160px; }
+			25% { background: red; }
+			50% { background: blue; width: 140px; }
+			75% { background: aqua; }
+			100% { background: black; width: 100px; }
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>Animasi</h1>
+	<div></div>
+</body>
+</html>
